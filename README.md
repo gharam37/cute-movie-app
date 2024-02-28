@@ -19,6 +19,13 @@ rails s
 | Movies List And Ordering | http://localhost:3000/movies/index |
 | Staff List and Search    | http://localhost:3000/staff/index  |
 
+![Movies View](https://github.com/gharam37/cute-movie-app/assets/25537073/c53353ea-f135-4bcb-837a-b76ca8c2af58)
+
+
+
+![Staff View](https://github.com/gharam37/cute-movie-app/assets/25537073/fe92a296-4e1c-48d6-b34e-bcbcf5f05da0)
+
+
 ## Notes
 
 I hate so many things about this code so here's some of the few things i would do better given time
