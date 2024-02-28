@@ -1,5 +1,7 @@
 class ReviewsController < ApplicationController
   def index
-    @reviews_by_movie = Review.group(:movie_id).select('movies.title as movie_title, avg(rating) as average_rating').joins(:movie).order('average_rating DESC')
+
+    @reviews = Review.joins(:movie).select("movies.title as movie_title, reviews.rating as rating, reviews.comment as comment").order("movies.title ASC, reviews.average_rating DESC")
+
   end
 end

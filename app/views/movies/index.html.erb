@@ -1,0 +1,27 @@
+<h1>Movies</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td><%= movie.title %></td>
+        <td>
+          <% unless movie.reviews.empty? %>
+            <ul>
+              <% movie.reviews.each do |review| %>
+                <li><%= review.rating %> Stars: <%= review.comment %></li>
+              <% end %>
+            </ul>
+          <% else %>
+            No reviews yet
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
