@@ -1,19 +1,24 @@
-<h1>Movies</h1>
+<h1>Movies (Sorted by Average Rating)</h1>
 <table>
   <thead>
     <tr>
       <th>Title</th>
+      <th>Average Rating</th>
       <th>Reviews</th>
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <% @movies.each do |movie_data| %>
       <tr>
-        <td><%= movie.title %></td>
+        <td><%= movie_data.title %></td>
+        <td><%= movie_data.average_rating.round(2) %> Stars</td>
         <td>
-          <% unless movie.reviews.empty? %>
+          <% review_ids = Movie.find(movie_data.movie_id).reviews.pluck(:id) %>
+          <% puts review_ids %>
+          <% reviews = Review.where(id: review_ids) %>
+          <% unless reviews.empty? %>
             <ul>
-              <% movie.reviews.each do |review| %>
+              <% reviews.each do |review| %>
                 <li><%= review.rating %> Stars: <%= review.comment %></li>
               <% end %>
             </ul>
