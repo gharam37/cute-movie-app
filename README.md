@@ -42,3 +42,6 @@ I hate so many things about this code so here's some of the few things i would d
 - I would also write a much prettier readme
 
 I also did an overkill things by assuming that the repeated rows belong to the same movie and created a staff table for the actor search thing - I did an overkill things by assuming that the repeated rows belong to the same movie and created a staff table for the actor search thing
+
+
+SHOUT OUT TO MY BROTHERS GEMINI AND CHATGPT
