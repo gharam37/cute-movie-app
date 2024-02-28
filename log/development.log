@@ -1,0 +1,1406 @@
+Started GET "/" for 127.0.0.1 at 2024-02-28 22:51:32 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/romy/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/romy/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 766)
+Completed 200 OK in 21ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 8979)
+
+
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (90.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (79.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActors (20240228205933)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActors (20240228205933)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20240228205933)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20240228205933)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" integer, "description" varchar, "country" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228205933"]]
+  [1m[36mTRANSACTION (843.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStaff (20240228210011)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStaff (20240228210011)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "staffs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "role" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228210011"]]
+  [1m[36mTRANSACTION (1547.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-02-28 21:06:22.542828"], ["updated_at", "2024-02-28 21:06:22.542828"]]
+  [1m[36mTRANSACTION (245.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStaff (20240228210011)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "staffs"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228210011"]]
+  [1m[36mTRANSACTION (895.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMovies (20240228205933)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228205933"]]
+  [1m[36mTRANSACTION (62.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20240228205933)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" integer, "description" varchar, "country" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228205933"]]
+  [1m[36mTRANSACTION (102.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStaff (20240228210011)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "staffs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "role" varchar, "filming_location" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228210011"]]
+  [1m[36mTRANSACTION (64.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReview (20240228210843)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "comment" text, "user" varchar, "movie_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_6ad75a4852"
+FOREIGN KEY ("movie_id")
+  REFERENCES "movies" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228210843"]]
+  [1m[36mTRANSACTION (1322.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/staff" for 127.0.0.1 at 2024-02-28 23:12:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/staff"):
+  
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/staff" for 127.0.0.1 at 2024-02-28 23:13:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/staff"):
+  
+Started GET "/staff" for 127.0.0.1 at 2024-02-28 23:15:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/staff"):
+  
+Started GET "/staff" for 127.0.0.1 at 2024-02-28 23:15:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/staff"):
+  
+Started GET "/staff/index" for 127.0.0.1 at 2024-02-28 23:15:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/staff/index"):
+  
+Started GET "/staff/index" for 127.0.0.1 at 2024-02-28 23:15:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/staff/index"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:15:23 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 873)
+  Rendered layout layouts/application.html.erb (Duration: 748.4ms | Allocations: 94466)
+Completed 200 OK in 755ms (Views: 749.0ms | ActiveRecord: 0.3ms | Allocations: 100166)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStaff Create (0.3ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hello"], ["role", nil], ["filming_location", nil], ["created_at", "2024-02-28 21:15:40.585718"], ["updated_at", "2024-02-28 21:15:40.585718"]]
+  [1m[36mTRANSACTION (850.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:15:44 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 15927)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 17486)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.6ms | Allocations: 17755)
+
+
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStaff Create (0.2ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "by"], ["role", nil], ["filming_location", nil], ["created_at", "2024-02-28 21:15:49.316371"], ["updated_at", "2024-02-28 21:15:49.316371"]]
+  [1m[36mTRANSACTION (2058.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:15:54 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2077)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 2339)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:15:56 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/staffs/search"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:15:56 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 525)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2083)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 2350)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:15:59 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/staffs/search"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:15:59 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 526)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2082)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2351)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:16:03 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/staffs/search"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:16:03 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2074)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 2338)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:16:51 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/staffs/search"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:16:51 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2075)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2337)
+
+
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:17:15 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2059)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 2321)
+
+
+Started GET "/sggaffs/index" for 127.0.0.1 at 2024-02-28 23:17:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sggaffs/index"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:18:00 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 738)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2542)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3518)
+
+
+Started GET "/staffs/search?query=hi" for 127.0.0.1 at 2024-02-28 23:18:03 +0200
+Processing by StaffsController#search as HTML
+  Parameters: {"query"=>"hi"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 811)
+
+
+  
+ActionController::MissingExactTemplate (StaffsController#search is missing a template for request formats: text/html):
+  
+actionpack (7.0.8.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.8.1) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.8.1) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.8.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+turbo-rails (2.0.4) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.4) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.8.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8.1) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.1) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8.1) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:18:03 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2074)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 2339)
+
+
+Started GET "/staffs/search?query=by" for 127.0.0.1 at 2024-02-28 23:18:06 +0200
+Processing by StaffsController#search as HTML
+  Parameters: {"query"=>"by"}
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 590)
+
+
+  
+ActionController::MissingExactTemplate (StaffsController#search is missing a template for request formats: text/html):
+  
+actionpack (7.0.8.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.8.1) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.8.1) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.8.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+turbo-rails (2.0.4) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.4) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.8.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8.1) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.1) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8.1) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:18:06 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2072)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2336)
+
+
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "smth"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:18:46.715419"], ["updated_at", "2024-02-28 21:18:46.715419"]]
+  [1m[36mTRANSACTION (1214.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStaffMovies (20240228212057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "staff_movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer NOT NULL, "movie_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a619573190"
+FOREIGN KEY ("staff_id")
+  REFERENCES "staffs" ("id")
+, CONSTRAINT "fk_rails_44fde84d79"
+FOREIGN KEY ("movie_id")
+  REFERENCES "movies" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_staff_movies_on_staff_id" ON "staff_movies" ("staff_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_staff_movies_on_movie_id" ON "staff_movies" ("movie_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212057"]]
+  [1m[36mTRANSACTION (2081.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:21:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/staffs/search"):
+  
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:21:35 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2458)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 18194)
+Completed 200 OK in 31ms (Views: 19.4ms | ActiveRecord: 0.6ms | Allocations: 28888)
+
+
+Started GET "/staffs/search?query=by" for 127.0.0.1 at 2024-02-28 23:21:40 +0200
+Processing by StaffsController#search as HTML
+  Parameters: {"query"=>"by"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 790)
+
+
+  
+ActionController::MissingExactTemplate (StaffsController#search is missing a template for request formats: text/html):
+  
+actionpack (7.0.8.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.8.1) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.8.1) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.8.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+turbo-rails (2.0.4) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.4) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.8.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8.1) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.1) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8.1) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:21:40 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 518)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2074)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2340)
+
+
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:22:09 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2557)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 18239)
+Completed 200 OK in 25ms (Views: 15.1ms | ActiveRecord: 0.6ms | Allocations: 27525)
+
+
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:22:10 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2079)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 2342)
+
+
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:22:11 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2069)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 2331)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:22:15 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"jbrand"}
+No template found for StaffsController#search, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 742)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:22:16 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"jbrand"}
+No template found for StaffsController#search, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 480)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.016417"], ["updated_at", "2024-02-28 21:24:30.016417"]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.021948"], ["updated_at", "2024-02-28 21:24:30.021948"]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.024743"], ["updated_at", "2024-02-28 21:24:30.024743"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.027279"], ["updated_at", "2024-02-28 21:24:30.027279"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.029218"], ["updated_at", "2024-02-28 21:24:30.029218"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.031172"], ["updated_at", "2024-02-28 21:24:30.031172"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.032958"], ["updated_at", "2024-02-28 21:24:30.032958"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.034492"], ["updated_at", "2024-02-28 21:24:30.034492"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.036063"], ["updated_at", "2024-02-28 21:24:30.036063"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.037570"], ["updated_at", "2024-02-28 21:24:30.037570"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.038865"], ["updated_at", "2024-02-28 21:24:30.038865"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.040158"], ["updated_at", "2024-02-28 21:24:30.040158"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.041466"], ["updated_at", "2024-02-28 21:24:30.041466"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:30.042734"], ["updated_at", "2024-02-28 21:24:30.042734"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (283.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.986446"], ["updated_at", "2024-02-28 21:24:59.986446"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.988002"], ["updated_at", "2024-02-28 21:24:59.988002"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.988843"], ["updated_at", "2024-02-28 21:24:59.988843"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.989684"], ["updated_at", "2024-02-28 21:24:59.989684"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.990502"], ["updated_at", "2024-02-28 21:24:59.990502"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.991437"], ["updated_at", "2024-02-28 21:24:59.991437"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.992256"], ["updated_at", "2024-02-28 21:24:59.992256"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.993116"], ["updated_at", "2024-02-28 21:24:59.993116"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.993938"], ["updated_at", "2024-02-28 21:24:59.993938"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.994777"], ["updated_at", "2024-02-28 21:24:59.994777"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.995645"], ["updated_at", "2024-02-28 21:24:59.995645"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.996480"], ["updated_at", "2024-02-28 21:24:59.996480"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.997290"], ["updated_at", "2024-02-28 21:24:59.997290"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:24:59.998140"], ["updated_at", "2024-02-28 21:24:59.998140"]]
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (64.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.512958"], ["updated_at", "2024-02-28 21:25:20.512958"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.514554"], ["updated_at", "2024-02-28 21:25:20.514554"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.515502"], ["updated_at", "2024-02-28 21:25:20.515502"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.516370"], ["updated_at", "2024-02-28 21:25:20.516370"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.517248"], ["updated_at", "2024-02-28 21:25:20.517248"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.518110"], ["updated_at", "2024-02-28 21:25:20.518110"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.519034"], ["updated_at", "2024-02-28 21:25:20.519034"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.519889"], ["updated_at", "2024-02-28 21:25:20.519889"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.520776"], ["updated_at", "2024-02-28 21:25:20.520776"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.521630"], ["updated_at", "2024-02-28 21:25:20.521630"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.522496"], ["updated_at", "2024-02-28 21:25:20.522496"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.523383"], ["updated_at", "2024-02-28 21:25:20.523383"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.524263"], ["updated_at", "2024-02-28 21:25:20.524263"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:20.525121"], ["updated_at", "2024-02-28 21:25:20.525121"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (995.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mMovie Delete All (580.3ms)[0m  [1m[31mDELETE FROM "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.467283"], ["updated_at", "2024-02-28 21:25:59.467283"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.468762"], ["updated_at", "2024-02-28 21:25:59.468762"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.469614"], ["updated_at", "2024-02-28 21:25:59.469614"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.470432"], ["updated_at", "2024-02-28 21:25:59.470432"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.471320"], ["updated_at", "2024-02-28 21:25:59.471320"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.472141"], ["updated_at", "2024-02-28 21:25:59.472141"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.472998"], ["updated_at", "2024-02-28 21:25:59.472998"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.473868"], ["updated_at", "2024-02-28 21:25:59.473868"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.474715"], ["updated_at", "2024-02-28 21:25:59.474715"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.475663"], ["updated_at", "2024-02-28 21:25:59.475663"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.476628"], ["updated_at", "2024-02-28 21:25:59.476628"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.477603"], ["updated_at", "2024-02-28 21:25:59.477603"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.478594"], ["updated_at", "2024-02-28 21:25:59.478594"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:25:59.479611"], ["updated_at", "2024-02-28 21:25:59.479611"]]
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (581.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.038042"], ["updated_at", "2024-02-28 21:26:05.038042"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.039648"], ["updated_at", "2024-02-28 21:26:05.039648"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.040487"], ["updated_at", "2024-02-28 21:26:05.040487"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.041315"], ["updated_at", "2024-02-28 21:26:05.041315"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.042137"], ["updated_at", "2024-02-28 21:26:05.042137"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.043038"], ["updated_at", "2024-02-28 21:26:05.043038"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.043875"], ["updated_at", "2024-02-28 21:26:05.043875"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.044729"], ["updated_at", "2024-02-28 21:26:05.044729"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.045572"], ["updated_at", "2024-02-28 21:26:05.045572"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.046426"], ["updated_at", "2024-02-28 21:26:05.046426"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.047308"], ["updated_at", "2024-02-28 21:26:05.047308"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.048125"], ["updated_at", "2024-02-28 21:26:05.048125"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.048935"], ["updated_at", "2024-02-28 21:26:05.048935"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:05.049736"], ["updated_at", "2024-02-28 21:26:05.049736"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (1963.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Delete All (1221.6ms)[0m  [1m[31mDELETE FROM "movies"[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.232689"], ["updated_at", "2024-02-28 21:26:27.232689"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.234146"], ["updated_at", "2024-02-28 21:26:27.234146"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.235105"], ["updated_at", "2024-02-28 21:26:27.235105"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.236004"], ["updated_at", "2024-02-28 21:26:27.236004"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.236918"], ["updated_at", "2024-02-28 21:26:27.236918"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.237827"], ["updated_at", "2024-02-28 21:26:27.237827"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.238731"], ["updated_at", "2024-02-28 21:26:27.238731"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.239733"], ["updated_at", "2024-02-28 21:26:27.239733"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.240576"], ["updated_at", "2024-02-28 21:26:27.240576"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.241427"], ["updated_at", "2024-02-28 21:26:27.241427"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.242260"], ["updated_at", "2024-02-28 21:26:27.242260"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.243151"], ["updated_at", "2024-02-28 21:26:27.243151"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.243983"], ["updated_at", "2024-02-28 21:26:27.243983"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:27.244833"], ["updated_at", "2024-02-28 21:26:27.244833"]]
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (68.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.500862"], ["updated_at", "2024-02-28 21:26:29.500862"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.502391"], ["updated_at", "2024-02-28 21:26:29.502391"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.503468"], ["updated_at", "2024-02-28 21:26:29.503468"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.504377"], ["updated_at", "2024-02-28 21:26:29.504377"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.505217"], ["updated_at", "2024-02-28 21:26:29.505217"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.506072"], ["updated_at", "2024-02-28 21:26:29.506072"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.506923"], ["updated_at", "2024-02-28 21:26:29.506923"]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.507781"], ["updated_at", "2024-02-28 21:26:29.507781"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.508596"], ["updated_at", "2024-02-28 21:26:29.508596"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.509425"], ["updated_at", "2024-02-28 21:26:29.509425"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.510233"], ["updated_at", "2024-02-28 21:26:29.510233"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.511154"], ["updated_at", "2024-02-28 21:26:29.511154"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.511968"], ["updated_at", "2024-02-28 21:26:29.511968"]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", nil], ["description", nil], ["country", nil], ["created_at", "2024-02-28 21:26:29.512804"], ["updated_at", "2024-02-28 21:26:29.512804"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (559.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Delete All (0.2ms)[0m  [1m[31mDELETE FROM "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (1117.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["created_at", "2024-02-28 21:28:32.577309"], ["updated_at", "2024-02-28 21:28:32.577309"]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["created_at", "2024-02-28 21:28:32.583841"], ["updated_at", "2024-02-28 21:28:32.583841"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["created_at", "2024-02-28 21:28:32.587911"], ["updated_at", "2024-02-28 21:28:32.587911"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (1027.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Delete All (0.1ms)[0m  [1m[31mDELETE FROM "movies"[0m
+  [1m[36mStaff Delete All (0.1ms)[0m  [1m[31mDELETE FROM "staffs"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (1391.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["created_at", "2024-02-28 21:32:04.419545"], ["updated_at", "2024-02-28 21:32:04.419545"]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dominic Sena"], ["role", "0"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:04.430942"], ["updated_at", "2024-02-28 21:32:04.430942"]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Nicolas Cage"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nicolas Cage"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:04.432684"], ["updated_at", "2024-02-28 21:32:04.432684"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["created_at", "2024-02-28 21:32:25.282673"], ["updated_at", "2024-02-28 21:32:25.282673"]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dominic Sena"], ["role", "0"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:25.293425"], ["updated_at", "2024-02-28 21:32:25.293425"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Nicolas Cage"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nicolas Cage"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:25.295317"], ["updated_at", "2024-02-28 21:32:25.295317"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStaffMovies (20240228212057)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "staff_movies"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212057"]]
+  [1m[36mTRANSACTION (534.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStaffMovies (20240228212057)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies_staffs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "staff_id" integer NOT NULL, "movie_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_b5ef9d2ef6"
+FOREIGN KEY ("staff_id")
+  REFERENCES "staffs" ("id")
+, CONSTRAINT "fk_rails_03d981e770"
+FOREIGN KEY ("movie_id")
+  REFERENCES "movies" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_movies_staffs_on_staff_id" ON "movies_staffs" ("staff_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_movies_staffs_on_movie_id" ON "movies_staffs" ("movie_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212057"]]
+  [1m[36mTRANSACTION (236.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["created_at", "2024-02-28 21:32:51.048273"], ["updated_at", "2024-02-28 21:32:51.048273"]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dominic Sena"], ["role", "0"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.061245"], ["updated_at", "2024-02-28 21:32:51.061245"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Nicolas Cage"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nicolas Cage"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.063079"], ["updated_at", "2024-02-28 21:32:51.063079"]]
+  [1m[36mStaff::HABTM_Movies Create (0.2ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 3], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.074429"], ["updated_at", "2024-02-28 21:32:51.074429"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 4], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.076206"], ["updated_at", "2024-02-28 21:32:51.076206"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.079628"], ["updated_at", "2024-02-28 21:32:51.079628"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 3], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.081016"], ["updated_at", "2024-02-28 21:32:51.081016"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 5], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.082325"], ["updated_at", "2024-02-28 21:32:51.082325"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.085362"], ["updated_at", "2024-02-28 21:32:51.085362"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 3], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.086741"], ["updated_at", "2024-02-28 21:32:51.086741"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 6], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.088268"], ["updated_at", "2024-02-28 21:32:51.088268"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Nicolas Cage"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 3], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.092028"], ["updated_at", "2024-02-28 21:32:51.092028"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 4], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.093381"], ["updated_at", "2024-02-28 21:32:51.093381"]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 3], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.096882"], ["updated_at", "2024-02-28 21:32:51.096882"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 5], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.098207"], ["updated_at", "2024-02-28 21:32:51.098207"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 3], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.101745"], ["updated_at", "2024-02-28 21:32:51.101745"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 6], ["movie_id", 103], ["created_at", "2024-02-28 21:32:51.103122"], ["updated_at", "2024-02-28 21:32:51.103122"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["created_at", "2024-02-28 21:32:51.104715"], ["updated_at", "2024-02-28 21:32:51.104715"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Christopher Nolan"], ["role", "0"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.106179"], ["updated_at", "2024-02-28 21:32:51.106179"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.108177"], ["updated_at", "2024-02-28 21:32:51.108177"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 5], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.109554"], ["updated_at", "2024-02-28 21:32:51.109554"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Joseph Gordon Levitt"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Joseph Gordon Levitt"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.112593"], ["updated_at", "2024-02-28 21:32:51.112593"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.113918"], ["updated_at", "2024-02-28 21:32:51.113918"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 8], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.115251"], ["updated_at", "2024-02-28 21:32:51.115251"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Ellen Page"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ellen Page"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:32:51.118195"], ["updated_at", "2024-02-28 21:32:51.118195"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.119528"], ["updated_at", "2024-02-28 21:32:51.119528"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 9], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.120855"], ["updated_at", "2024-02-28 21:32:51.120855"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.124303"], ["updated_at", "2024-02-28 21:32:51.124303"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 6], ["movie_id", 104], ["created_at", "2024-02-28 21:32:51.125618"], ["updated_at", "2024-02-28 21:32:51.125618"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["created_at", "2024-02-28 21:32:51.127183"], ["updated_at", "2024-02-28 21:32:51.127183"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.129723"], ["updated_at", "2024-02-28 21:32:51.129723"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 5], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.131048"], ["updated_at", "2024-02-28 21:32:51.131048"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Joseph Gordon Levitt"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.134464"], ["updated_at", "2024-02-28 21:32:51.134464"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 8], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.135764"], ["updated_at", "2024-02-28 21:32:51.135764"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Ellen Page"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.139177"], ["updated_at", "2024-02-28 21:32:51.139177"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 9], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.140504"], ["updated_at", "2024-02-28 21:32:51.140504"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 7], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.143954"], ["updated_at", "2024-02-28 21:32:51.143954"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 6], ["movie_id", 105], ["created_at", "2024-02-28 21:32:51.145290"], ["updated_at", "2024-02-28 21:32:51.145290"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (67.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mStaff Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "staffs"[0m
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."staff_id" = ?[0m  [["staff_id", 9]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "movies_staffs" ON "movies"."id" = "movies_staffs"."movie_id" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 9]]
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" INNER JOIN "movies_staffs" ON "staffs"."id" = "movies_staffs"."staff_id" WHERE "movies_staffs"."movie_id" = ?[0m  [["movie_id", 105]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Delete All (0.3ms)[0m  [1m[31mDELETE FROM "movies"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Delete All (0.3ms)[0m  [1m[31mDELETE FROM "movies"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mMovie::HABTM_Staffs Delete All (0.2ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."movie_id" = ?[0m  [["movie_id", 103]]
+  [1m[36mMovie Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 103]]
+  [1m[36mMovie::HABTM_Staffs Delete All (0.1ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."movie_id" = ?[0m  [["movie_id", 104]]
+  [1m[36mMovie Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 104]]
+  [1m[36mMovie::HABTM_Staffs Delete All (0.0ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."movie_id" = ?[0m  [["movie_id", 105]]
+  [1m[36mMovie Destroy (0.0ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 105]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  [1m[36mStaff::HABTM_Movies Delete All (0.1ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 3]]
+  [1m[36mStaff Destroy (0.1ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 3]]
+  [1m[36mStaff::HABTM_Movies Delete All (0.0ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 4]]
+  [1m[36mStaff Destroy (0.1ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 4]]
+  [1m[36mStaff::HABTM_Movies Delete All (0.0ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 5]]
+  [1m[36mStaff Destroy (0.0ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 5]]
+  [1m[36mStaff::HABTM_Movies Delete All (0.0ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 6]]
+  [1m[36mStaff Destroy (0.0ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 6]]
+  [1m[36mStaff::HABTM_Movies Delete All (0.0ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 7]]
+  [1m[36mStaff Destroy (0.0ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 7]]
+  [1m[36mStaff::HABTM_Movies Delete All (0.1ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 8]]
+  [1m[36mStaff Destroy (0.0ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 8]]
+  [1m[36mStaff::HABTM_Movies Delete All (0.0ms)[0m  [1m[31mDELETE FROM "movies_staffs" WHERE "movies_staffs"."staff_id" = ?[0m  [["staff_id", 9]]
+  [1m[36mStaff Destroy (0.0ms)[0m  [1m[31mDELETE FROM "staffs" WHERE "staffs"."id" = ?[0m  [["id", 9]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (796.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SeedData (20240228212249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["created_at", "2024-02-28 21:38:05.938787"], ["updated_at", "2024-02-28 21:38:05.938787"]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dominic Sena"], ["role", "0"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:05.949682"], ["updated_at", "2024-02-28 21:38:05.949682"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Nicolas Cage"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nicolas Cage"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:05.951509"], ["updated_at", "2024-02-28 21:38:05.951509"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 10], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.961868"], ["updated_at", "2024-02-28 21:38:05.961868"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 11], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.963508"], ["updated_at", "2024-02-28 21:38:05.963508"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:05.966659"], ["updated_at", "2024-02-28 21:38:05.966659"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 10], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.968032"], ["updated_at", "2024-02-28 21:38:05.968032"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 12], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.969375"], ["updated_at", "2024-02-28 21:38:05.969375"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.1ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:05.972385"], ["updated_at", "2024-02-28 21:38:05.972385"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 10], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.973938"], ["updated_at", "2024-02-28 21:38:05.973938"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 13], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.975416"], ["updated_at", "2024-02-28 21:38:05.975416"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Nicolas Cage"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 10], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.979135"], ["updated_at", "2024-02-28 21:38:05.979135"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 11], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.980460"], ["updated_at", "2024-02-28 21:38:05.980460"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 10], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.983918"], ["updated_at", "2024-02-28 21:38:05.983918"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 12], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.985257"], ["updated_at", "2024-02-28 21:38:05.985257"]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["year", 2000], ["description", "A retired master car thief must come back to the industry and steal fifty cars with his crew in one night to save his brother's life."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Dominic Sena"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 10], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.988700"], ["updated_at", "2024-02-28 21:38:05.988700"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 13], ["movie_id", 106], ["created_at", "2024-02-28 21:38:05.989989"], ["updated_at", "2024-02-28 21:38:05.989989"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["created_at", "2024-02-28 21:38:05.991584"], ["updated_at", "2024-02-28 21:38:05.991584"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Christopher Nolan"], ["role", "0"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:05.993030"], ["updated_at", "2024-02-28 21:38:05.993030"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 107], ["created_at", "2024-02-28 21:38:05.994967"], ["updated_at", "2024-02-28 21:38:05.994967"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 12], ["movie_id", 107], ["created_at", "2024-02-28 21:38:05.996277"], ["updated_at", "2024-02-28 21:38:05.996277"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Joseph Gordon Levitt"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Joseph Gordon Levitt"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:05.999254"], ["updated_at", "2024-02-28 21:38:05.999254"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.000574"], ["updated_at", "2024-02-28 21:38:06.000574"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 15], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.001888"], ["updated_at", "2024-02-28 21:38:06.001888"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Ellen Page"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff Create (0.0ms)[0m  [1m[32mINSERT INTO "staffs" ("name", "role", "filming_location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ellen Page"], ["role", "1"], ["filming_location", nil], ["created_at", "2024-02-28 21:38:06.004818"], ["updated_at", "2024-02-28 21:38:06.004818"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.006207"], ["updated_at", "2024-02-28 21:38:06.006207"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 16], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.007552"], ["updated_at", "2024-02-28 21:38:06.007552"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "US"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.010981"], ["updated_at", "2024-02-28 21:38:06.010981"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 13], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.012317"], ["updated_at", "2024-02-28 21:38:06.012317"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "year", "description", "country", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["created_at", "2024-02-28 21:38:06.013866"], ["updated_at", "2024-02-28 21:38:06.013866"]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Leonardo Di Caprio"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.016402"], ["updated_at", "2024-02-28 21:38:06.016402"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 12], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.017709"], ["updated_at", "2024-02-28 21:38:06.017709"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Joseph Gordon Levitt"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.021198"], ["updated_at", "2024-02-28 21:38:06.021198"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 15], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.022480"], ["updated_at", "2024-02-28 21:38:06.022480"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Ellen Page"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.025884"], ["updated_at", "2024-02-28 21:38:06.025884"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 16], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.027225"], ["updated_at", "2024-02-28 21:38:06.027225"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."year" = ? AND "movies"."description" = ? AND "movies"."country" = ? LIMIT ?[0m  [["title", "Inception"], ["year", 2010], ["description", "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."], ["country", "UK"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Christopher Nolan"], ["role", "0"], ["LIMIT", 1]]
+  [1m[36mStaff Load (0.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."name" = ? AND "staffs"."role" = ? LIMIT ?[0m  [["name", "Giovani Ribisi"], ["role", "1"], ["LIMIT", 1]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 14], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.030668"], ["updated_at", "2024-02-28 21:38:06.030668"]]
+  [1m[36mStaff::HABTM_Movies Create (0.1ms)[0m  [1m[32mINSERT INTO "movies_staffs" ("staff_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["staff_id", 13], ["movie_id", 108], ["created_at", "2024-02-28 21:38:06.031970"], ["updated_at", "2024-02-28 21:38:06.031970"]]
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 4], ["comment", "Really good!"], ["user", "Sam Pedro"], ["movie_id", 106], ["created_at", "2024-02-28 21:38:06.040550"], ["updated_at", "2024-02-28 21:38:06.040550"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 3], ["comment", "Ok movie"], ["user", "Peter Troll"], ["movie_id", 106], ["created_at", "2024-02-28 21:38:06.042346"], ["updated_at", "2024-02-28 21:38:06.042346"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 5], ["comment", "The best ever!"], ["user", "Chris Bla"], ["movie_id", 106], ["created_at", "2024-02-28 21:38:06.043961"], ["updated_at", "2024-02-28 21:38:06.043961"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 1], ["comment", "Worst Ever"], ["user", "Suzan Something"], ["movie_id", 106], ["created_at", "2024-02-28 21:38:06.045507"], ["updated_at", "2024-02-28 21:38:06.045507"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Gone in 60 seconds"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 5], ["comment", "Really really good"], ["user", "Axel Ontheway"], ["movie_id", 106], ["created_at", "2024-02-28 21:38:06.047064"], ["updated_at", "2024-02-28 21:38:06.047064"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Inception"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 4], ["comment", "Ok movie"], ["user", "Mack Boe"], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.048612"], ["updated_at", "2024-02-28 21:38:06.048612"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Inception"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 2], ["comment", "The best ever!"], ["user", "Peter Troll"], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.050140"], ["updated_at", "2024-02-28 21:38:06.050140"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Inception"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 3], ["comment", "Really good!"], ["user", "Rik van der Kroon"], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.051685"], ["updated_at", "2024-02-28 21:38:06.051685"]]
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT ?[0m  [["title", "Inception"], ["LIMIT", 1]]
+  [1m[36mReview Create (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating", "comment", "user", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["rating", 2], ["comment", "Empty"], ["user", "Sam Pedro"], ["movie_id", 107], ["created_at", "2024-02-28 21:38:06.053237"], ["updated_at", "2024-02-28 21:38:06.053237"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240228212249"]]
+  [1m[36mTRANSACTION (71.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:39:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"jbrand"}
+No template found for StaffsController#search, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 9701)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:39:00 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"jbrand"}
+No template found for StaffsController#search, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 472)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:39:01 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"jbrand"}
+No template found for StaffsController#search, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 471)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:40:34 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"jbrand"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.8ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name ILIKE '%jbrand%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1987)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2054)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.2ms | Allocations: 12251)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "ILIKE": syntax error):
+    11:       </tr>
+    12:   </thead>
+    13:   <tbody>
+    14:     <% @staffs.each do |staff| %>
+    15:       <tr>
+    16:         <td><%= staff.name %></td>
+    17: 
+  
+app/views/staffs/index.html.erb:14
+app/controllers/staffs_controller.rb:9:in `search'
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:41:42 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2439)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 17889)
+Completed 200 OK in 47ms (Views: 31.8ms | ActiveRecord: 1.8ms | Allocations: 27724)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:41:46 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"by"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%by%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1820)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2386)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:41:48 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"by"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%by%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1820)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2382)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:41:50 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"by"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%by%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 233.5ms | Allocations: 1820)
+Completed 200 OK in 235ms (Views: 233.9ms | ActiveRecord: 0.1ms | Allocations: 2382)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:41:51 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"by"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%by%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 519)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1820)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 2382)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:41:55 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Dominic Sena"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Dominic Sena%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 540)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 1841)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 2415)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:41:57 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Dominic Sena"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Dominic Sena%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 540)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1841)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 2409)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:42:17 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Dominic Sena"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Dominic Sena%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 540)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1841)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 2411)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:42:37 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Dominic Sena"}
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/staffs_controller.rb:8:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  Rendered staffs/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3129)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3196)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms | Allocations: 16214)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Staff:0x00007f162c4198f0>):
+    11:       </tr>
+    12:   </thead>
+    13:   <tbody>
+    14:     <% @staffs.each do |staff| %>
+    15:       <tr>
+    16:         <td><%= staff.name %></td>
+    17: 
+  
+app/views/staffs/index.html.erb:14
+app/controllers/staffs_controller.rb:10:in `search'
+Started GET "/staffs/index" for 127.0.0.1 at 2024-02-28 23:42:47 +0200
+Processing by StaffsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2379)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 17824)
+Completed 200 OK in 33ms (Views: 21.7ms | ActiveRecord: 0.8ms | Allocations: 27637)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:42:50 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>""}
+  [1m[36mStaff Load (0.6ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 2]]
+  ↳ app/controllers/staffs_controller.rb:8:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1312)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 2594)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:42:51 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>""}
+  [1m[36mStaff Load (0.5ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 2]]
+  ↳ app/controllers/staffs_controller.rb:8:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1312)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 2381)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:42:52 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>""}
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 2]]
+  ↳ app/controllers/staffs_controller.rb:8:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1312)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 2375)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:42:52 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>""}
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" ORDER BY "staffs"."id" DESC LIMIT ?[0m  [["LIMIT", 2]]
+  ↳ app/controllers/staffs_controller.rb:8:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1312)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2365)
+
+
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE 'd')[0m
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE 'Dominic Sena')[0m
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:44:38 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2263)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 17373)
+Completed 200 OK in 22ms (Views: 10.3ms | ActiveRecord: 0.7ms | Allocations: 27591)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:44:41 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Dominic Sena"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Dominic Sena%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 540)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1841)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2415)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:44:42 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Dominic Sena"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Dominic Sena%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 540)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1841)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2399)
+
+
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:44:46 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Nicolas Cage"}
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Nicolas Cage%')[0m
+  ↳ app/views/staffs/index.html.erb:14
+  Rendered staffs/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 540)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1841)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2401)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/staffs/search" for 127.0.0.1 at 2024-02-28 23:46:15 +0200
+Processing by StaffsController#search as TURBO_STREAM
+  Parameters: {"query"=>"Nicolas Cage"}
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE (name LIKE '%Nicolas Cage%') /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/staffs_controller.rb:10:in `search'
+  Rendering layout layouts/application.html.erb
+  Rendering staffs/index.html.erb within layouts/application
+  Rendered staffs/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 15543)
+Completed 200 OK in 18ms (Views: 9.2ms | ActiveRecord: 0.6ms | Allocations: 28492)
+
+
