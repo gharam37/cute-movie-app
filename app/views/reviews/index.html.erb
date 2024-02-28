@@ -1,0 +1,18 @@
+<h1>Reviews by Movie (Average Rating)</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Movie</th>
+      <th>Average Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reviews_by_movie.each do |review_data| %>
+      <tr>
+        <td><%= review_data.movie_title %></td>
+        <td><%= review_data.average_rating.round(2) %></td>  # Round to 2 decimal places
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
